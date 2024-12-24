@@ -1,4 +1,4 @@
-const { postPredictHandler, getHistoriesHandler } = require('./handler');
+const { postPredictHandler, getHistoriesHandler } = require('../server/handler');
 
 
 const routes = [

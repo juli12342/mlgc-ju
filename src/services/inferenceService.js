@@ -1,5 +1,5 @@
 const tf = require('@tensorflow/tfjs-node');
-const InputError = require('../../exceptions/InputError');
+const InputError = require('../exceptions/InputError');
 
 async function predictClassification(model, image) {
     try {
@@ -18,7 +18,7 @@ async function predictClassification(model, image) {
         if (confidenceScore > 50) {
             result = "Cancer";
             suggestion = "Segera periksa ke dokter! Penting untuk melakukan pemeriksaan lebih lanjut untuk memastikan diagnosis";
-        }else {
+        } else {
             result = "Non-cancer";
             suggestion = "Anda sehat! Tetap jaga pola hidup sehat untuk menjaga kesehatan Anda";
         }
